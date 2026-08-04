@@ -8,8 +8,8 @@ dev-repo:     "git+https://github.com/robur-coop/unic.git"
 license:      "AGPL-3.0-or-later"
 synopsis:     "A tool to infer what is needed to vendors to compile unikernels"
 build: [
-  ["dune" "build" "-p" name "-j" jobs]
-  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+  [ "dune" "build" "-p" name "-j" jobs ]
+  [ "dune" "runtest" "-p" name "-j" jobs ] {with-test}
 ]
 depends: [
   "ocaml"       {>= "5.0"}

@@ -7,7 +7,9 @@ bug-reports:  "https://git.robur.coop/robur/unic/issues"
 dev-repo:     "git+https://github.com/robur-coop/unic.git"
 license:      "AGPL-3.0-or-later"
 synopsis:     "A library which introspect and infer dependencies via codept, ocamlfind and opam"
-build: ["dune" "build" "-p" name "-j" jobs]
+build: [
+  [ "dune" "build" "-p" name "-j" jobs ]
+]
 depends: [
   "ocaml"       {>= "5.0"}
   "dune"        {>= "2.8.0"}
