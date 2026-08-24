@@ -14,7 +14,7 @@ depends: [
   "codept"      {>= "0.13.0"}
   "opam-state"
   "opam-format"
-  "opam-core"   {>= "2.5.2"}
+  "opam-core"   {>= "2.6.0~alpha1"}
   "logs"
   "fmt"
   "fpath"
