@@ -23,3 +23,4 @@ depends: [
   "bos"
   "bcfgt"
 ]
+x-maintenance-intent: [ "(latest)" ]
