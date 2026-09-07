@@ -2,21 +2,25 @@ opam-version: "2.0"
 name:         "uniq"
 maintainer:   "Romain Calascibetta <romain.calascibetta@gmail.com>"
 authors:      "Romain Calascibetta <romain.calascibetta@gmail.com>"
-homepage:     "https://git.robur.coop/robur/uniq"
-bug-reports:  "https://git.robur.coop/robur/uniq/issues"
-dev-repo:     "git+https://git.robur.coop/robur/uniq.git"
+homepage:     "https://git.robur.coop/robur/unic"
+bug-reports:  "https://git.robur.coop/robur/unic/issues"
+dev-repo:     "git+https://github.com/robur-coop/unic.git"
 license:      "AGPL-3.0-or-later"
-build: ["dune" "build" "-p" name "-j" jobs]
+synopsis:     "A library which introspect and infer dependencies via codept, ocamlfind and opam"
+build: [
+  [ "dune" "build" "-p" name "-j" jobs ]
+]
 depends: [
-  "ocaml"       {>= "4.07.0"}
+  "ocaml"       {>= "5.0"}
   "dune"        {>= "2.8.0"}
   "codept"      {>= "0.13.0"}
   "opam-state"  {= opam-version}
   "opam-format" {= opam-version}
-  "opam-core"   {= opam-version}
+  "opam-core"   {>= "2.6.0~alpha1" & = opam-version}
   "logs"
   "fmt"
   "fpath"
   "bos"
   "bcfgt"
 ]
+x-maintenance-intent: [ "(latest)" ]

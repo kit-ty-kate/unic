@@ -3,6 +3,24 @@
  (modules normalize))
 
 (cram
- (applies_to :whole_subtree)
+ (applies_to infer-simple)
+ (locks infer)
+ (package unic)
+ (deps %{bin:unic}))
+
+(cram
+ (applies_to infer-layout)
+ (locks infer)
+ (package unic)
+ (deps %{bin:unic}))
+
+(cram
+ (applies_to infer-ambiguity)
+ (locks infer)
+ (package unic)
+ (deps %{bin:unic}))
+
+(cram
+ (applies_to info)
  (package unic)
  (deps %{bin:unic} normalize.exe))
